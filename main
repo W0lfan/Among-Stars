@@ -1,0 +1,350 @@
+var Kerakna =
+"                                                                                          \n"+
+"                                                                                          \n"+
+"                                       777777777777                                       \n"+
+"                                      77777777777777                                      \n"+
+"                                     7777777777777777                                     \n"+
+"                                    777777      777777                                    \n"+
+"                         777       77777          77777       777                         \n"+
+"                         777       77777          77777       777                         \n"+
+"                         777       7777            7777       777                         \n"+
+"                         777       777              777       777                         \n"+
+"                         777       777              777       777                         \n"+
+"                         777      7777              7777      777                         \n"+
+"                         777      7777              7777      777                         \n"+
+"                         777     77777              77777     777                         \n"+
+"                         777     7777                7777     777                         \n"+
+"                  7777   777    77777                77777    777   7777                  \n"+
+"                  7777   777    7777                  7777    777   7777                  \n"+
+"                  7777   777   7777                    7777   777   7777                  \n"+
+"                   777   777   7777                    7777   777   777                   \n"+
+"                   777   777  7777               999    7777  777   777                   \n"+
+"                   777   777 77777              9999    77777 777   777                   \n"+
+"                   777   777 77777          99999999    77777 777   777                   \n"+
+"                   777   7777777          999999999       7777777   777                   \n"+
+"                   777   7777777          99999999        7777777   777                   \n"+
+"                   777   777777          99999             777777   777                   \n"+
+"                   777   777777          9999              777777   777                   \n"+
+"                   777   77779999999999999999               77777   777                   \n"+
+"                   777  77777999999999999999                 77777  777                   \n"+
+"                   777  7777 999999999999999                  7777  777                   \n"+
+"                   777 7777                           99999    7777 777                   \n"+
+"                   777 777                          9999999     777 777                   \n"+
+"                   7777777                      99999999999     7777777                   \n"+
+"                   777777      99999          99999999999        777777                   \n"+
+"                   777777    9999999999    999999999999999       777777                   \n"+
+"                   77777    9999999999999999999999 99999999       77777                   \n"+
+"                  777777    99999999999999999999     99999999     777777                  \n"+
+"                  77777    99999    999999999          9999999     77777                  \n"+
+"                  77777    9999       999999             99999     77777                  \n"+
+"                  7777    99999         9999              99999     7777                  \n"+
+"                  7777   99999                             99999    7777                  \n"+
+"                 7777    9999                              99999     7777                 \n"+
+"                 7777    9999                 999           9999     7777                 \n"+
+"                 777     999                  99999          999999999977                 \n"+
+"                7777     999                  9999999     9999999999999777                \n"+
+"                7777     999                   9999999  999999999999999777                \n"+
+"                777      999                     99999999999999        777                \n"+
+"               7777      9999                     99999999999          7777               \n"+
+"               7777      99999                     99999999            7777               \n"+
+"               79999     999999                    999999               777               \n"+
+"               79999      99999                   999999                777               \n"+
+"              779999999    99999                 999999                 7777              \n"+
+"              7779999999    9999                 99999                   777              \n"+
+"             7777  999999   9999                99999                    7777             \n"+
+"             7777    9999                     999999                     7777             \n"+
+"            7777     9999                   9999999                       7777            \n"+
+"            777       9999     99999999999999999999                        777            \n"+
+"           7777       9999     999999999999999999               9999       7777           \n"+
+"           7777        999     999999999999999                999999       7777           \n"+
+"           777         999              9999                 9999999        777           \n"+
+"          7777        9999              9999                999999          7777          \n"+
+"          7777        9999               9999              999999           7777          \n"+
+"         77999       9999                9999              99999             7777         \n"+
+"         779999     99999                9999             999999              777         \n"+
+"        7779999    99999                  999           9999999999            7777        \n"+
+"        7779999   999999               999999          999999999999           7777        \n"+
+"       7777      99999                 999999        999999999999999           7777       \n"+
+"       7777      99999                 999999     999999999     999999         7777       \n"+
+"       777       999                            999999999        999999         777       \n"+
+"      7777       999                            9999999           99999999     99977      \n"+
+"      7777       9999                           99999              99999999999999977      \n"+
+"      777        9999                999                             999999999999977      \n"+
+"      777         999                999                               9999999999977      \n"+
+"      777                            999                                9999     777      \n"+
+"     7777                            999                                         7777     \n"+
+"     777           999       7777777777            7777777777                     777     \n"+
+"    7777           999  777777777777777777      777777777777777777                7777    \n"+
+"    7777           99977777777777777777777      77777777777777777777777           7777    \n"+
+"   77777        777777777777777      7777777  7777777      777777777777777        77777   \n"+
+"   7777        77777777777             777777777777             77777777777        7777   \n"+
+"   7777      777777777                  7777777777                  777777777      7777   \n"+
+"  7777     77777777                      77777777                      77777777     7777  \n"+
+" 77777   77777777                         777777                         77777777   77777 \n"+
+" 7777 777777777                           777777                           777777777 7777 \n"+
+"7777777777777                              7777                              7777777777777\n"+
+"77777777777                                7777                                77777777777\n"+
+"77777777                                   7777                                   77777777\n"+
+"77777                                      7777                                      77777\n"+
+"                                           7777                                           \n"+
+"                                                                                          \n"+
+"                                                                                          ";
+
+var Barracuda_607 = '{"name":"Barracuda","level":6,"model":7,"size":2.4,"specs":{"shield":{"capacity":[150,150],"reload":[1,1]},"generator":{"capacity":[1,1],"reload":[1,1]},"ship":{"mass":675,"speed":[90,90],"rotation":[45,45],"acceleration":[150,150]}},"bodies":{"body":{"section_segments":12,"offset":{"x":0,"y":0,"z":0},"position":{"x":[0,0,0,0,0,0,0,0,0,0],"y":[-90,-100,-60,-10,0,20,50,80,100,90],"z":[0,0,0,0,0,0,0,0,0,0,0]},"width":[0,5,20,25,35,40,40,35,30,0],"height":[0,5,40,45,40,60,70,60,30,0],"texture":[10,2,10,2,3,13,13,63,12],"propeller":true},"front":{"section_segments":8,"offset":{"x":0,"y":-20,"z":0},"position":{"x":[0,0,0,0,0],"y":[-90,-85,-70,-60,-20],"z":[0,0,0,0,0]},"width":[0,40,45,10,12],"height":[0,15,18,8,12],"texture":[8,63,4,4,4],"propeller":true},"propeller":{"section_segments":10,"offset":{"x":40,"y":40,"z":0},"position":{"x":[0,0,0,0,0,0,0,0,0,0],"y":[-20,-15,0,10,20,25,30,40,70,60],"z":[0,0,0,0,0,0,0,0,0,0]},"width":[0,10,15,15,15,10,10,20,15,0],"height":[0,10,15,15,15,10,10,18,8,0],"texture":[4,4,10,3,3,63,4,63,12],"propeller":true},"sides":{"section_segments":6,"angle":90,"offset":{"x":0,"y":0,"z":0},"position":{"x":[0,0,0,0,0,0,0,0,0,0],"y":[-80,-75,-60,-50,-10,10,50,60,75,80],"z":[0,0,0,0,0,0,0,0,0,0]},"width":[0,30,35,10,12,12,10,35,30,0],"height":[0,10,12,8,12,12,8,12,10,0],"texture":[4,63,4,4,4,4,4,63,4]},"cockpit":{"section_segments":12,"offset":{"x":0,"y":-20,"z":30},"position":{"x":[0,0,0,0,0,0,0,0],"y":[-50,-20,0,10,30,50],"z":[0,0,0,0,0,0]},"width":[0,12,18,20,15,0],"height":[0,20,22,24,20,0],"texture":[9]}},"wings":{"top":{"doubleside":true,"offset":{"x":0,"y":20,"z":15},"length":[70],"width":[70,30],"angle":[90],"position":[0,30],"texture":[63],"bump":{"position":10,"size":30}},"top2":{"doubleside":true,"offset":{"x":0,"y":51,"z":5},"length":[70],"width":[50,20],"angle":[90],"position":[0,60],"texture":[63],"bump":{"position":10,"size":30}}},"typespec":{"name":"Barracuda","level":6,"model":7,"code":607,"specs":{"shield":{"capacity":[150,150],"reload":[1,1]},"generator":{"capacity":[1,1],"reload":[1,1]},"ship":{"mass":675,"speed":[90,90],"rotation":[45,45],"acceleration":[150,150]}},"shape":[5.28,5.25,5.332,5.393,4.944,1.997,1.745,1.556,1.435,3.587,3.81,3.779,3.838,3.84,3.779,3.81,3.587,3.205,3.571,3.9,5.132,5.888,5.835,5.551,4.886,5.808,4.886,5.551,5.835,5.888,5.132,3.9,3.571,3.205,3.587,3.81,3.779,3.838,3.84,3.779,3.81,3.587,1.435,1.556,1.745,1.997,4.944,5.393,5.332,5.25],"lasers":[],"radius":5.888}}';
+
+var ships = [Barracuda_607];
+
+
+
+var vocabulary = [
+      { text: "You", icon:"\u004e", key:"O" },
+      { text: "Me", icon:"\u004f", key:"E" },
+      { text: "Yes", icon:"\u004c", key:"Y" },
+      { text: "No", icon:"\u004d", key:"N" },
+
+      { text: "Sus", icon:"\u004a", key:"S" },
+      { text: "Defend", icon:"\u0025", key:"D" },
+      { text: "Have", icon:"", key:"D" },
+      { text: "Good Game", icon:"GG", key:"G" },
+
+
+      { text: "Wait", icon:"\u0048", key:"T" },
+      { text: "Kill", icon:"\u005b", key:"B" },
+      { text: "Missile", icon:"\u006b", key:"M" },
+      { text: "Hmm", icon:"\u004b", key:"Q" },
+
+      { text: "Changed", icon:"", key:"X" },
+      { text: "His color", icon:"\u00b0", key:"Z" }
+    ] ;
+
+
+
+this.options = {
+  // see documentation for options reference
+  root_mode: "",
+  hues: [0,180,120],
+  crystal_value: 0,
+  asteroids_strengh: 10,
+  soundtrack: "crystals.mp3",
+  map_size: 100,
+  reset_tree: false,
+  vocabulary: vocabulary,
+  bouncing_lasers: false,
+  friendly_colors: 3,
+  lives: 0,
+  starting_ship: 706,
+  ships: ships,
+  projectile_speed: 2,
+  max_level: 6,
+  starting_ship_maxed: true,
+  map_name: "Among Stars",
+  max_players: 10, 
+  custom_map: Kerakna,
+  radar_zoom: 1,
+};
+
+var taskIco = {
+  id: "radar_background",
+  components: [
+    { type: "text",position:[0,0,100,100],value: "💎"}
+    ]
+};
+
+var kill = {
+  id: "kill",
+  position: [5,30,8,14],
+  clickable: true,
+  shortcut: "K",
+  visible: true,
+  components: [
+    { type: "box",position:[0,0,100,100],stroke:"#22FB00",width:4},
+    { type: "text",position:[10,5,75,30],value:"200",color:"#CDE"},
+    { type: "text",position:[10,35,80,30],value:"KILL",color:"#CDE"},
+    { type: "text",position:[10,60,80,30],value:"[K]",color:"#CDE"},
+
+    ]
+};
+
+var tasks = {
+  id: "tasks",
+  position: [5,30,8,14],
+  clickable: true,
+  shortcut: "K",
+  visible: true,
+  components: [
+    { type: "box",position:[0,0,100,100],stroke:"#FBB300",width:4},
+    { type: "text",position:[10,5,75,30],value:"200",color:"#CDE"},
+    { type: "text",position:[10,35,80,30],value:"TASKS",color:"#CDE"},
+    { type: "text",position:[10,60,80,30],value:"[K]",color:"#CDE"},
+
+    ]
+};
+
+var taskOne = {
+  id: "taskOne",
+  position: [5,45,8,14],
+  clickable: true,
+  shortcut: "T",
+  visible: true,
+  components: [
+    { type: "box",position:[0,0,100,100],stroke:"#FBB300",width:4},
+    { type: "text",position:[10,5,75,30],value:"TASK 1",color:"#CDE"},
+    { type: "text",position:[10,35,80,30],value:"150 GEMS",color:"#CDE"},
+    { type: "text",position:[10,60,80,30],value:"[T]",color:"#CDE"},
+    ]
+};
+
+var taskTwo = {
+  id: "taskTwo",
+  position: [5,45,8,14],
+  clickable: true,
+  shortcut: "T",
+  visible: true,
+  components: [
+    { type: "box",position:[0,0,100,100],stroke:"#FBB300",width:4},
+    { type: "text",position:[10,5,75,30],value:"TASK 2",color:"#CDE"},
+    { type: "text",position:[10,35,80,30],value:"",color:"#CDE"},
+    { type: "text",position:[10,60,80,30],value:"[T]",color:"#CDE"},
+    ]
+};
+
+var taskThree = {
+  id: "taskThree",
+  position: [5,45,8,14],
+  clickable: true,
+  shortcut: "T",
+  visible: true,
+  components: [
+    { type: "box",position:[0,0,100,100],stroke:"#22FB00",width:4},
+    { type: "text",position:[10,5,75,30],value:"TASK 3",color:"#CDE"},
+    { type: "text",position:[10,35,80,30],value:"",color:"#CDE"},
+    { type: "text",position:[10,60,80,30],value:"[T]",color:"#CDE"},
+    ]
+};
+//Buttons informations
+var toTick = function(min) {
+  return min*3600;
+};
+var rand = function(num) {
+  return Math.floor(Math.random()*num);
+};
+var buttons_delay = toTick(3600);
+var kill_delay = toTick(3600);
+var weapons_code = 11;
+var costs = 150;
+var numberOfImpostors = 0;
+var IMPOSTOR = 0, CREWMATE = 1;
+var teams = {
+  names: ["red","green","blue"],
+  hues: [0,120,180]
+};
+var NumberOfTasks = 0;
+var FinishedTasks = 0;
+var putInImpostorTeam = function(ship) {
+  ship.set({team: IMPOSTOR });
+};
+var putInCrewTeam = function(ship) {
+  ship.set({team: CREWMATE });
+};
+var putInCrewTeam = function(ship) {
+  ship.set({team: CREWMATE });
+};
+var ship_spawn = function(ship) {
+  ship.set({x:0,y: 0});
+};
+
+var ship_game_over = function(ship) {
+  ship.gameover({"Rating":"Can do better","Score":1234});
+}
+;
+
+this.tick = function(game) {
+  if (game.step % 15 == 0) {
+    for (let ship of game.ships) {
+      if (!ship.custom.init) {
+        ship.custom.init = true;
+        if (rand(2) && numberOfImpostors < 2) {
+          teams.names.forEach((n,i) => {
+            ship.setUIComponent({
+              id: n,
+              position: [5,45+i*15,8,14],
+              clickable: true,
+              shortcut: n[0].toUpperCase(),
+              visible: true,
+              components: [
+                { type: "box",position:[0,0,100,100],stroke:`hsla(${teams.hues[i]},100%,50%,1)`,width:4},
+                { type: "text",position:[10,5,75,30],value:"💎 150",color:"#CDE"},
+                { type: "text",position:[10,35,80,30],value:n.toUpperCase(),color:"#CDE"},
+                { type: "text",position:[10,60,80,30],value:`[${n[0].toUpperCase()}]`,color:"#CDE"},
+              ]
+            });
+          });
+          ship.setUIComponent(kill);
+          putInImpostorTeam(ship);
+          numberOfImpostors++;
+          ship_spawn(ship);
+        }
+        else {
+          putInCrewTeam(ship);
+          ship.setUIComponent(tasks);
+          ship_spawn(ship);
+        }
+      }
+    }
+  }
+};
+
+
+var team_button_clicked = function(ship, index) {
+  if ((!ship.custom.next_change || (game.step >= ship.custom.next_change)) && ship.crystals >= costs) {
+    ship.custom.next_change = game.step + buttons_delay;
+    ship.set({hue: teams.hues[index], crystals: ship.crystals - costs });
+  }
+};
+
+var kill_button_clicked = function(ship) {
+  if (!ship.custom.next_change || game.step >= ship.custom.next_change) {
+    ship.custom.next_change = game.step + kill_delay;
+    game.addCollectible({code: 11, x: ship.x, y: ship.y});
+  }
+};
+
+var resetShip = function(ship) {
+  ship.set({type:101});
+};
+var taskOneAchieved = function(ship) {
+  ship.set({crystals: ship.crystals - 150});
+};
+
+this.event = function(event, game) {
+  let ship = event.ship;
+  switch (event.name) {
+    case "ui_component_clicked":
+      switch (event.id) {
+        case "reset":
+          resetShip(ship);
+          break;
+        case "kill":
+          kill_button_clicked(ship);
+          break;
+        case "tasks":
+            if (NumberOfTasks <= 0) {
+              ship.setUIComponent(taskOne);
+            } else if (NumberOfTasks <= 1) {
+              ship.setUIComponent(taskTwo);
+              NumberOfTasks++;
+            }
+          break;
+        case "taskOne":
+          if (ship.crystals >= 150) {
+            taskOneAchieved(ship);
+            ship.setUIComponent({id:"taskOne",visible:false});
+            FinishedTasks++;
+          }
+          break;
+        default:
+          let id = teams.names.indexOf(event.id);
+          if (id != -1) team_button_clicked(ship, id);
+      }
+  }
+};
