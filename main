@@ -1,101 +1,101 @@
 var Kerakna =
-"                                                                                          \n"+
-"                                                                                          \n"+
-"                                       777777777777                                       \n"+
-"                                      77777777777777                                      \n"+
-"                                     7777777777777777                                     \n"+
-"                                    777777      777777                                    \n"+
-"                         777       77777          77777       777                         \n"+
-"                         777       77777          77777       777                         \n"+
-"                         777       7777            7777       777                         \n"+
-"                         777       777              777       777                         \n"+
-"                         777       777              777       777                         \n"+
-"                         777      7777              7777      777                         \n"+
-"                         777      7777              7777      777                         \n"+
-"                         777     77777              77777     777                         \n"+
-"                         777     7777                7777     777                         \n"+
-"                  7777   777    77777                77777    777   7777                  \n"+
-"                  7777   777    7777                  7777    777   7777                  \n"+
-"                  7777   777   7777                    7777   777   7777                  \n"+
-"                   777   777   7777                    7777   777   777                   \n"+
-"                   777   777  7777               999    7777  777   777                   \n"+
-"                   777   777 77777              9999    77777 777   777                   \n"+
-"                   777   777 77777          99999999    77777 777   777                   \n"+
-"                   777   7777777          999999999       7777777   777                   \n"+
-"                   777   7777777          99999999        7777777   777                   \n"+
-"                   777   777777          99999             777777   777                   \n"+
-"                   777   777777          9999              777777   777                   \n"+
-"                   777   77779999999999999999               77777   777                   \n"+
-"                   777  77777999999999999999                 77777  777                   \n"+
-"                   777  7777 999999999999999                  7777  777                   \n"+
-"                   777 7777                           99999    7777 777                   \n"+
-"                   777 777                          9999999     777 777                   \n"+
-"                   7777777                      99999999999     7777777                   \n"+
-"                   777777      99999          99999999999        777777                   \n"+
-"                   777777    9999999999    999999999999999       777777                   \n"+
-"                   77777    9999999999999999999999 99999999       77777                   \n"+
-"                  777777    99999999999999999999     99999999     777777                  \n"+
-"                  77777    99999    999999999          9999999     77777                  \n"+
-"                  77777    9999       999999             99999     77777                  \n"+
-"                  7777    99999         9999              99999     7777                  \n"+
-"                  7777   99999                             99999    7777                  \n"+
-"                 7777    9999                              99999     7777                 \n"+
-"                 7777    9999                 999           9999     7777                 \n"+
-"                 777     999                  99999          999999999977                 \n"+
-"                7777     999                  9999999     9999999999999777                \n"+
-"                7777     999                   9999999  999999999999999777                \n"+
-"                777      999                     99999999999999        777                \n"+
-"               7777      9999                     99999999999          7777               \n"+
-"               7777      99999                     99999999            7777               \n"+
-"               79999     999999                    999999               777               \n"+
-"               79999      99999                   999999                777               \n"+
-"              779999999    99999                 999999                 7777              \n"+
-"              7779999999    9999                 99999                   777              \n"+
-"             7777  999999   9999                99999                    7777             \n"+
-"             7777    9999                     999999                     7777             \n"+
-"            7777     9999                   9999999                       7777            \n"+
-"            777       9999     99999999999999999999                        777            \n"+
-"           7777       9999     999999999999999999               9999       7777           \n"+
-"           7777        999     999999999999999                999999       7777           \n"+
-"           777         999              9999                 9999999        777           \n"+
-"          7777        9999              9999                999999          7777          \n"+
-"          7777        9999               9999              999999           7777          \n"+
-"         77999       9999                9999              99999             7777         \n"+
-"         779999     99999                9999             999999              777         \n"+
-"        7779999    99999                  999           9999999999            7777        \n"+
-"        7779999   999999               999999          999999999999           7777        \n"+
-"       7777      99999                 999999        999999999999999           7777       \n"+
-"       7777      99999                 999999     999999999     999999         7777       \n"+
-"       777       999                            999999999        999999         777       \n"+
-"      7777       999                            9999999           99999999     99977      \n"+
-"      7777       9999                           99999              99999999999999977      \n"+
-"      777        9999                999                             999999999999977      \n"+
-"      777         999                999                               9999999999977      \n"+
-"      777                            999                                9999     777      \n"+
-"     7777                            999                                         7777     \n"+
-"     777           999       7777777777            7777777777                     777     \n"+
-"    7777           999  777777777777777777      777777777777777777                7777    \n"+
-"    7777           99977777777777777777777      77777777777777777777777           7777    \n"+
-"   77777        777777777777777      7777777  7777777      777777777777777        77777   \n"+
-"   7777        77777777777             777777777777             77777777777        7777   \n"+
-"   7777      777777777                  7777777777                  777777777      7777   \n"+
-"  7777     77777777                      77777777                      77777777     7777  \n"+
-" 77777   77777777                         777777                         77777777   77777 \n"+
-" 7777 777777777                           777777                           777777777 7777 \n"+
-"7777777777777                              7777                              7777777777777\n"+
-"77777777777                                7777                                77777777777\n"+
-"77777777                                   7777                                   77777777\n"+
-"77777                                      7777                                      77777\n"+
-"                                           7777                                           \n"+
-"                                                                                          \n"+
-"                                                                                          ";
-
-var Barracuda_607 = '{"name":"Barracuda","level":6,"model":7,"size":2.4,"specs":{"shield":{"capacity":[150,150],"reload":[1,1]},"generator":{"capacity":[1,1],"reload":[1,1]},"ship":{"mass":675,"speed":[90,90],"rotation":[45,45],"acceleration":[150,150]}},"bodies":{"body":{"section_segments":12,"offset":{"x":0,"y":0,"z":0},"position":{"x":[0,0,0,0,0,0,0,0,0,0],"y":[-90,-100,-60,-10,0,20,50,80,100,90],"z":[0,0,0,0,0,0,0,0,0,0,0]},"width":[0,5,20,25,35,40,40,35,30,0],"height":[0,5,40,45,40,60,70,60,30,0],"texture":[10,2,10,2,3,13,13,63,12],"propeller":true},"front":{"section_segments":8,"offset":{"x":0,"y":-20,"z":0},"position":{"x":[0,0,0,0,0],"y":[-90,-85,-70,-60,-20],"z":[0,0,0,0,0]},"width":[0,40,45,10,12],"height":[0,15,18,8,12],"texture":[8,63,4,4,4],"propeller":true},"propeller":{"section_segments":10,"offset":{"x":40,"y":40,"z":0},"position":{"x":[0,0,0,0,0,0,0,0,0,0],"y":[-20,-15,0,10,20,25,30,40,70,60],"z":[0,0,0,0,0,0,0,0,0,0]},"width":[0,10,15,15,15,10,10,20,15,0],"height":[0,10,15,15,15,10,10,18,8,0],"texture":[4,4,10,3,3,63,4,63,12],"propeller":true},"sides":{"section_segments":6,"angle":90,"offset":{"x":0,"y":0,"z":0},"position":{"x":[0,0,0,0,0,0,0,0,0,0],"y":[-80,-75,-60,-50,-10,10,50,60,75,80],"z":[0,0,0,0,0,0,0,0,0,0]},"width":[0,30,35,10,12,12,10,35,30,0],"height":[0,10,12,8,12,12,8,12,10,0],"texture":[4,63,4,4,4,4,4,63,4]},"cockpit":{"section_segments":12,"offset":{"x":0,"y":-20,"z":30},"position":{"x":[0,0,0,0,0,0,0,0],"y":[-50,-20,0,10,30,50],"z":[0,0,0,0,0,0]},"width":[0,12,18,20,15,0],"height":[0,20,22,24,20,0],"texture":[9]}},"wings":{"top":{"doubleside":true,"offset":{"x":0,"y":20,"z":15},"length":[70],"width":[70,30],"angle":[90],"position":[0,30],"texture":[63],"bump":{"position":10,"size":30}},"top2":{"doubleside":true,"offset":{"x":0,"y":51,"z":5},"length":[70],"width":[50,20],"angle":[90],"position":[0,60],"texture":[63],"bump":{"position":10,"size":30}}},"typespec":{"name":"Barracuda","level":6,"model":7,"code":607,"specs":{"shield":{"capacity":[150,150],"reload":[1,1]},"generator":{"capacity":[1,1],"reload":[1,1]},"ship":{"mass":675,"speed":[90,90],"rotation":[45,45],"acceleration":[150,150]}},"shape":[5.28,5.25,5.332,5.393,4.944,1.997,1.745,1.556,1.435,3.587,3.81,3.779,3.838,3.84,3.779,3.81,3.587,3.205,3.571,3.9,5.132,5.888,5.835,5.551,4.886,5.808,4.886,5.551,5.835,5.888,5.132,3.9,3.571,3.205,3.587,3.81,3.779,3.838,3.84,3.779,3.81,3.587,1.435,1.556,1.745,1.997,4.944,5.393,5.332,5.25],"lasers":[],"radius":5.888}}';
-
-var ships = [Barracuda_607];
+"                   333                                              333                   \n"+
+"                   333   333                                  333   333                   \n"+
+"                   333   333           799999999997           333   333                   \n"+
+"                   333   333          79999999999997          333   333                   \n"+
+"                   333   333         7999999999999997         333   333                   \n"+
+"                   333   333        7999999    9999997        333   333                   \n"+
+"                   333   333       7799999      9999977       333   333                   \n"+
+"                   333   777       799999        999997       777   333                   \n"+
+"                   333   777       99999          99999       777   333                   \n"+
+"                   333   777       9999            9999       777   333                   \n"+
+"                   333   777       9999            9999       777   333                   \n"+
+"                   333   777      99999            99999      777   333                   \n"+
+"                   333   777      9999              9999      777   333                   \n"+
+"                   333   777     99997              79999     777   333                   \n"+
+"                   333   777    99999                99999    777   333                   \n"+
+"                  7777   777    99997                79999    777   7777                  \n"+
+"                  7777   777   99999                  99999   777   7777                  \n"+
+"                  7777   777  99999                    99999  777   7777                  \n"+
+"                   777   777  99997                    79999  777   777                   \n"+
+"                   777   777 99999               999    99999 777   777                   \n"+
+"                   777   777999997              9999    799999777   777                   \n"+
+"                   777   777999977          99999999    779999777   777                   \n"+
+"                   777   7799999          999999999       9999977   777                   \n"+
+"                   777   7999997          99999999        7999997   777                   \n"+
+"                   777   999997          99999             799999   777                   \n"+
+"                   777  9999997          9999              7999999  777                   \n"+
+"                   777 9999999999999999999999               7999999 777                   \n"+
+"                   777 999997999999999999999                 799999 777                   \n"+
+"                   777999997 999999999999999                  799999777                   \n"+
+"                   77799997                           99999    79999777                   \n"+
+"                   7779997                          9999999     7999777                   \n"+
+"                   7799997                      99999999999     7999977                   \n"+
+"                   799997      99999          99999999999        799997                   \n"+
+"                   799997    9999999999    999999999999999       799997                   \n"+
+"                   79997    9999999999999999999999 99999999       79997                   \n"+
+"                  779997    99999999999999999999     99999999     799977                  \n"+
+"                  79999    99999    999999999          9999999     99997                  \n"+
+"                  79999    9999       999999             99999     99997                  \n"+
+"                  79999   99999         9999              99999    99997                  \n"+
+"                  7999   99999                             99999    9997                  \n"+
+"                 79999   9999                              99999    99997                 \n"+
+"                 79999   9999       9999      999           9999    99997                 \n"+
+"                 79999   999       99999      99999          999999999997                 \n"+
+"                77999    999       9999999    9999999     9999999999999977                \n"+
+"                79999    999      99999999     9999999  999999999999999997                \n"+
+"                79999    999      99999999       99999999999999      99997                \n"+
+"               79999     9999     9999999         99999999999         99997               \n"+
+"               79999     99999    9999999          99999999           99997               \n"+
+"               99999     999999     9999           999999              9999               \n"+
+"              999999      99999                   999999               99999              \n"+
+"              999999999    99999                 999999                 9999              \n"+
+"              9999999999    9999                 99999                  9999              \n"+
+"             7999  999999   9999                99999                    9997             \n"+
+"             9999    9999                     999999                     9999             \n"+
+"            79999    9999                   9999999                      99997            \n"+
+"            99999     9999     99999999999999999999                      99999            \n"+
+"           79999      9999     999999999999999999               9999      99997           \n"+
+"           79999       999     999999999999999                999999      99997           \n"+
+"           9999        999              9999                 9999999       9999           \n"+
+"          79999       9999              9999                999999         99997          \n"+
+"          7999        9999               9999              999999           9997          \n"+
+"         99999       9999                9999              99999            99999         \n"+
+"        9999999     99999                9999             999999            999999        \n"+
+"        9999999    99999                  999           9999999999           99999        \n"+
+"        9999999   999999               999999          999999999999          99999        \n"+
+"       99999     99999                 999999        999999999999999          99999       \n"+
+"       9999      99999                 999999     999999999     999999         9999       \n"+
+"       9999      999                            999999999        999999        9999       \n"+
+"      79999      999                            9999999           99999999     99997      \n"+
+"      99999      9999                           99999              99999999999999999      \n"+
+"      9999       9999                999                             999999999999999      \n"+
+"      9999        999                999                               9999999999999      \n"+
+"     99999                           999                                9999    99999     \n"+
+"     9999                            999                                         9999     \n"+
+"    99999          999       7777777777            7777777777                    99999    \n"+
+"    9999           999  777799999999999977      779999999999997777                9999    \n"+
+"   99999           99977799999999999999997      79999999999999999777777           99999   \n"+
+"   99997        7779999999999999999999999999999999999999999999999999999777        79999   \n"+
+"   9999        7799999999999999      9999999999999999      9999999999999977        9999   \n"+
+"   9997      799999999999999          99999999999999          999999999999997      7999   \n"+
+"  7999     9999999999                    79999997                    9999999999     9997  \n"+
+" 79999   79999999999                      799997                      99999999997   99997 \n"+
+" 7999977999999999                         799997                         9999999997799997 \n"+
+"79999979999999         333                 9999                 333         99999997999997\n"+
+"799999999999  333      333                 9999                 333      333  999999999997\n"+
+"79999999999   333      333                 9999                 333      333   99999999997\n"+
+"79999999      333      333                 9999                 333      333      99999997\n"+
+"  99999       333      333                 7777                 333      333       99999  \n"+
+"              333      333                                      333      333              \n"+
+"              333      333                                      333      333              ";
 
 
-
+var Fly_101 = '{"name":"Fly","level":1,"model":1,"size":1.05,"zoom":1,"specs":{"shield":{"capacity":[100,100],"reload":[2,3]},"generator":{"capacity":[1,1],"reload":[1,1]},"ship":{"mass":60,"speed":[100,100],"rotation":[130,130],"acceleration":[100,100]}},"bodies":{"main":{"section_segments":12,"offset":{"x":0,"y":0,"z":10},"position":{"x":[0,0,0,0,0,0,0,0,0,0],"y":[-65,-60,-50,-20,10,30,55,75,60],"z":[0,0,0,0,0,0,0,0,0]},"width":[0,8,10,30,25,30,18,15,0],"height":[0,6,8,12,20,20,18,15,0],"propeller":true,"texture":[4,63,10,1,1,1,12,17]},"cockpit":{"section_segments":12,"offset":{"x":0,"y":0,"z":20},"position":{"x":[0,0,0,0,0,0,0],"y":[-15,0,20,30,60],"z":[0,0,0,0,0]},"width":[0,13,17,10,5],"height":[0,18,25,18,5],"propeller":false,"texture":[7,9,9,4,4]},"cannon":{"section_segments":6,"offset":{"x":0,"y":-15,"z":-10},"position":{"x":[0,0,0,0,0,0],"y":[-40,-50,-20,0,20,30],"z":[0,0,0,0,0,20]},"width":[0,5,8,11,7,0],"height":[0,5,8,11,10,0],"angle":0,"texture":[3,3,10,3]}},"wings":{"main":{"length":[60,20],"width":[100,50,40],"angle":[-10,10],"position":[0,20,10],"doubleside":true,"offset":{"x":0,"y":10,"z":5},"bump":{"position":30,"size":20},"texture":[11,63]}},"typespec":{"name":"Fly","level":1,"model":1,"code":101,"specs":{"shield":{"capacity":[100,100],"reload":[2,3]},"generator":{"capacity":[1,1],"reload":[1,1]},"ship":{"mass":60,"speed":[100,100],"rotation":[130,130],"acceleration":[100,100]}},"shape":[1.368,1.368,1.093,0.965,0.883,0.827,0.791,0.767,0.758,0.777,0.847,0.951,1.092,1.667,1.707,1.776,1.856,1.827,1.744,1.687,1.525,1.415,1.335,1.606,1.603,1.578,1.603,1.606,1.335,1.415,1.525,1.687,1.744,1.827,1.856,1.776,1.707,1.667,1.654,0.951,0.847,0.777,0.758,0.767,0.791,0.827,0.883,0.965,1.093,1.368],"lasers":[],"radius":1.856}}';
+var Impasta_102 = '{"name":"Impasta","level":1,"model":2,"size":1.1,"zoom":1,"specs":{"shield":{"capacity":[100,100],"reload":[3,3]},"generator":{"capacity":[120,120],"reload":[2,2]},"ship":{"mass":60,"speed":[100,100],"rotation":[130,130],"acceleration":[100,100]}},"bodies":{"main":{"section_segments":10,"offset":{"x":0,"y":0,"z":0},"position":{"x":[0,0,0,0,0,0,0,0,0,0,0,0],"y":[-100,-98,-95,-70,-40,0,40,70,80,90,100],"z":[0,0,0,0,0,0,0,0,0,0,0]},"width":[0,5,10,20,30,20,20,30,30,30,20,0],"height":[0,4,4,20,20,10,10,15,15,15,10,10],"texture":[12,5,63,4,4,3,4,4,5],"laser":{"damage":[120,120],"rate":1,"type":1,"speed":[190,190],"number":1}},"back":{"section_segments":10,"offset":{"x":0,"y":0,"z":0},"position":{"x":[0,0,0,0,0],"y":[90,95,100,105,90],"z":[0,0,0,0,0]},"width":[10,15,18,19,2],"height":[3,5,7,8,2],"texture":[63],"propeller":true},"cockpit":{"section_segments":8,"offset":{"x":0,"y":-25,"z":12},"position":{"x":[0,0,0,0,0,0],"y":[-45,-40,-25,0,5],"z":[0,0,0,0,0,0]},"width":[0,10,15,5,0],"height":[0,10,15,5,0],"texture":[9]},"laser":{"section_segments":10,"offset":{"x":50,"y":10,"z":-13},"position":{"x":[0,0,0,0,0,0,0,0,0,0],"y":[-30,-25,0,10,20,25,30,40,70,60],"z":[0,0,0,0,0,0,0,0,0,0]},"width":[0,10,15,15,15,10,10,15,10,0],"height":[0,10,15,15,15,10,10,15,5,0],"texture":[6,4,10,3,4,3,2],"propeller":true}},"wings":{"top":{"doubleside":true,"offset":{"x":10,"y":60,"z":5},"length":[30],"width":[50,30],"angle":[60],"position":[0,50],"texture":[3],"bump":{"position":10,"size":10}},"side":{"doubleside":true,"offset":{"x":10,"y":70,"z":5},"length":[30],"width":[40,20],"angle":[-13],"position":[0,60],"texture":[63],"bump":{"position":10,"size":10}},"wings":{"offset":{"x":0,"y":35,"z":0},"length":[80],"width":[100,70],"angle":[0],"position":[-80,50],"texture":[4],"bump":{"position":10,"size":15}}},"typespec":{"name":"Impasta","level":1,"model":2,"code":102,"specs":{"shield":{"capacity":[100,100],"reload":[3,3]},"generator":{"capacity":[120,120],"reload":[2,2]},"ship":{"mass":60,"speed":[100,100],"rotation":[130,130],"acceleration":[100,100]}},"shape":[2.2,2.141,1.787,1.481,1.272,1.135,1.076,1.035,1.016,1.188,1.343,1.35,1.371,1.416,1.46,1.564,1.887,2.17,2.405,2.753,3.16,2.084,2.79,3.199,2.656,2.315,2.656,3.199,2.79,2.084,3.16,2.753,2.405,2.17,1.887,1.564,1.46,1.416,1.372,1.35,1.343,1.188,1.016,1.035,1.076,1.135,1.272,1.481,1.787,2.141],"lasers":[{"x":0,"y":-2.2,"z":0,"angle":0,"damage":[120,120],"rate":1,"type":1,"speed":[190,190],"number":1,"spread":0,"error":0,"recoil":0}],"radius":3.199}}';
+var Not_Impasta_103 = '{"name":"Not Impasta","level":1,"model":3,"size":1.1,"zoom":1,"specs":{"shield":{"capacity":[100,100],"reload":[3,3]},"generator":{"capacity":[4,4],"reload":[2,2]},"ship":{"mass":60,"speed":[100,100],"rotation":[130,130],"acceleration":[100,100]}},"bodies":{"main":{"section_segments":10,"offset":{"x":0,"y":0,"z":0},"position":{"x":[0,0,0,0,0,0,0,0,0,0,0,0],"y":[-100,-98,-95,-70,-40,0,40,70,80,90,100],"z":[0,0,0,0,0,0,0,0,0,0,0]},"width":[0,5,10,20,30,20,20,30,30,30,20,0],"height":[0,4,4,20,20,10,10,15,15,15,10,10],"texture":[12,5,63,4,4,3,4,4,5]},"back":{"section_segments":10,"offset":{"x":0,"y":0,"z":0},"position":{"x":[0,0,0,0,0],"y":[90,95,100,105,90],"z":[0,0,0,0,0]},"width":[10,15,18,19,2],"height":[3,5,7,8,2],"texture":[63],"propeller":true},"cockpit":{"section_segments":8,"offset":{"x":0,"y":-25,"z":12},"position":{"x":[0,0,0,0,0,0],"y":[-45,-40,-25,0,5],"z":[0,0,0,0,0,0]},"width":[0,10,15,5,0],"height":[0,10,15,5,0],"texture":[9]},"laser":{"section_segments":10,"offset":{"x":50,"y":10,"z":-13},"position":{"x":[0,0,0,0,0,0,0,0,0,0],"y":[-30,-25,0,10,20,25,30,40,70,60],"z":[0,0,0,0,0,0,0,0,0,0]},"width":[0,10,15,15,15,10,10,15,10,0],"height":[0,10,15,15,15,10,10,15,5,0],"texture":[6,4,10,3,4,3,2],"propeller":true,"laser":{"damage":[2,2],"rate":1,"type":1,"speed":[190,190],"number":1}}},"wings":{"top":{"doubleside":true,"offset":{"x":10,"y":60,"z":5},"length":[30],"width":[50,30],"angle":[60],"position":[0,50],"texture":[3],"bump":{"position":10,"size":10}},"side":{"doubleside":true,"offset":{"x":10,"y":70,"z":5},"length":[30],"width":[40,20],"angle":[-13],"position":[0,60],"texture":[63],"bump":{"position":10,"size":10}},"wings":{"offset":{"x":0,"y":35,"z":0},"length":[80],"width":[100,70],"angle":[0],"position":[-80,50],"texture":[4],"bump":{"position":10,"size":15}}},"typespec":{"name":"Not Impasta","level":1,"model":3,"code":103,"specs":{"shield":{"capacity":[100,100],"reload":[3,3]},"generator":{"capacity":[4,4],"reload":[2,2]},"ship":{"mass":60,"speed":[100,100],"rotation":[130,130],"acceleration":[100,100]}},"shape":[2.2,2.141,1.787,1.481,1.272,1.135,1.076,1.035,1.016,1.188,1.343,1.35,1.371,1.416,1.46,1.564,1.887,2.17,2.405,2.753,3.16,2.084,2.79,3.199,2.656,2.315,2.656,3.199,2.79,2.084,3.16,2.753,2.405,2.17,1.887,1.564,1.46,1.416,1.372,1.35,1.343,1.188,1.016,1.035,1.076,1.135,1.272,1.481,1.787,2.141],"lasers":[{"x":1.1,"y":-0.44,"z":-0.286,"angle":0,"damage":[2,2],"rate":1,"type":1,"speed":[190,190],"number":1,"spread":0,"error":0,"recoil":0},{"x":-1.1,"y":-0.44,"z":-0.286,"angle":0,"damage":[2,2],"rate":1,"type":1,"speed":[190,190],"number":1,"spread":0,"error":0,"recoil":0}],"radius":3.199}}';
+var spectator_104 = '{"name":"spectator","level":1,"model":4,"size":0.1,"specs":{"shield":{"capacity":[500,500],"reload":[500,500]},"generator":{"capacity":[1,1],"reload":[1,1]},"ship":{"mass":1,"speed":[145,145],"rotation":[130,130],"acceleration":[120,120]}},"bodies":{"main":{"section_segments":12,"offset":{"x":0,"y":0,"z":10},"position":{"x":[0,0,0,0,0,0,0,0,0,0],"y":[-65,-60,-50,-20,10,30,55,75,60],"z":[0,0,0,0,0,0,0,0,0]},"width":[0,8,10,30,25,30,18,15,0],"height":[0,6,8,12,20,20,18,15,0],"propeller":true,"texture":[4,63,10,1,1,1,12,17]},"cockpit":{"section_segments":12,"offset":{"x":0,"y":0,"z":20},"position":{"x":[0,0,0,0,0,0,0],"y":[-15,0,20,30,60],"z":[0,0,0,0,0]},"width":[0,13,17,10,5],"height":[0,18,25,18,5],"propeller":false,"texture":[7,9,9,4,4]},"cannon":{"section_segments":6,"offset":{"x":0,"y":-15,"z":-10},"position":{"x":[0,0,0,0,0,0],"y":[-40,-50,-20,0,20,30],"z":[0,0,0,0,0,20]},"width":[0,5,8,11,7,0],"height":[0,5,8,11,10,0],"angle":0,"laser":{"damage":[5,6],"rate":4,"type":1,"speed":[160,180],"number":1,"error":2.5},"propeller":false,"texture":[3,3,10,3]}},"wings":{"main":{"length":[60,20],"width":[100,50,40],"angle":[-10,10],"position":[0,20,10],"doubleside":true,"offset":{"x":0,"y":10,"z":5},"bump":{"position":30,"size":20},"texture":[11,63]}},"typespec":{"name":"spectator","level":1,"model":4,"code":104,"specs":{"shield":{"capacity":[500,500],"reload":[500,500]},"generator":{"capacity":[1,1],"reload":[1,1]},"ship":{"mass":1,"speed":[145,145],"rotation":[130,130],"acceleration":[120,120]}},"shape":[0.13,0.13,0.104,0.092,0.084,0.079,0.075,0.073,0.072,0.074,0.081,0.091,0.104,0.159,0.163,0.169,0.177,0.174,0.166,0.161,0.145,0.135,0.127,0.153,0.153,0.15,0.153,0.153,0.127,0.135,0.145,0.161,0.166,0.174,0.177,0.169,0.163,0.159,0.158,0.091,0.081,0.074,0.072,0.073,0.075,0.079,0.084,0.092,0.104,0.13],"lasers":[{"x":0,"y":-0.13,"z":-0.02,"angle":0,"damage":[5,6],"rate":4,"type":1,"speed":[160,180],"number":1,"spread":0,"error":2.5,"recoil":0}],"radius":0.177}}';
+var ships = [Fly_101, Impasta_102, Not_Impasta_103, spectator_104 ];
 var vocabulary = [
       { text: "You", icon:"\u004e", key:"O" },
       { text: "Me", icon:"\u004f", key:"E" },
@@ -116,42 +116,61 @@ var vocabulary = [
       { text: "Changed", icon:"", key:"X" },
       { text: "His color", icon:"\u00b0", key:"Z" }
     ] ;
-
-
-
+    
+    
 this.options = {
-  // see documentation for options reference
-  root_mode: "",
-  hues: [0,180,120],
-  crystal_value: 0,
-  asteroids_strengh: 10,
-  soundtrack: "crystals.mp3",
-  map_size: 100,
-  reset_tree: false,
-  vocabulary: vocabulary,
-  bouncing_lasers: false,
-  friendly_colors: 3,
-  lives: 0,
-  starting_ship: 706,
-  ships: ships,
-  projectile_speed: 2,
-  max_level: 6,
-  starting_ship_maxed: true,
-  map_name: "Among Stars",
-  max_players: 10, 
-  custom_map: Kerakna,
-  radar_zoom: 1,
+  root_mode: "",//Bouncing lasers going brr
+  hues: [0,180,120], //3? Just why?
+  crystal_value: 0, //Don't mine..it's like...uselless.
+  asteroids_strengh: 100000, //Don't try to mine, I said.
+  soundtrack: "argon.mp3", //A music, for the game I guess? Maybe trying to make a thing that play Among Us music.
+  map_size: 90, //Map size is 90..so why not?
+  reset_tree: false, //Actually if it was "true" there will be no differences.
+  vocabulary: vocabulary, //A vocabulary because there is not chat I guess.
+  friendly_colors: 3, //3 ? Just why?
+  lives: 0, //Trying to make a system that made you a gameover screen when you die.
+  ships: ships, //Uuuuh..nothing to say about that.
+  max_level: 1, //Don't try to upgrade bruh.
+  starting_ship_maxed: true, //Because if it's not you'll want to max your ship.
+  map_name: "Among Stars", //Because of the mod's name?
+  max_players: 10, //Among Us's game have 10 so this mod have 10.
+  custom_map: Kerakna ,//Random maps is a cool idea I think.
+  radar_zoom: 1.1,//Can you see ONLY the ship?
 };
-
-var taskIco = {
-  id: "radar_background",
+//Waiting screen component
+var infos = {
+  id: "infos",
+  position: [30,10,70,30],
+  visible: true,
   components: [
-    { type: "text",position:[0,0,100,100],value: "💎"}
+    { type: "text",position:[0,-20,60,60],value:"Welcome to Among Stars! Mining is useless here." ,color:"#CDE"},
+    { type: "text",position:[15,20,30,30],value:"Enjoy this game mode!" ,color:"#CDE"},
+    ]
+};
+var waiting = {
+  id: "waiting",
+  position: [30,10,70,30],
+  visible: true,
+  components: [
+    { type: "text",position:[0,-20,60,60],value:"You have to wait! Please be patient." ,color:"#CDE"},
+    { type: "text",position:[0,0,60,60],value:"This game need 10 players, waiting for them all..." ,color:"#CDE"},
+    ]
+};
+var credits = {
+  id: "credits",
+  position: [5,80,70,30],
+  visible: true,
+  components: [
+    { type: "text",position:[0,-5,50,50],value:"This mod was made by Wolfan." ,color:"#CDE"},
+    { type: "text",position:[1,0,70,70],value:"You can contact him to report bugs or submit suggestions on discord." ,color:"#CDE"},
     ]
 };
 
-var kill = {
-  id: "kill",
+/*Impostor's buttons: only the impostor have access to these buttons:
+  - Ventilation button for free (it don't need gems), and without cooldown.
+  - EnergeyAdd button, to increase of + 5 the current generator value (10 to 15) for 5 gems, without cooldown.*/
+var vent = {
+  id: "vent",
   position: [5,30,8,14],
   clickable: true,
   shortcut: "K",
@@ -159,12 +178,40 @@ var kill = {
   components: [
     { type: "box",position:[0,0,100,100],stroke:"#22FB00",width:4},
     { type: "text",position:[10,5,75,30],value:"200",color:"#CDE"},
-    { type: "text",position:[10,35,80,30],value:"KILL",color:"#CDE"},
+    { type: "text",position:[10,35,80,30],value:"🌬️ VENT",color:"#CDE"},
     { type: "text",position:[10,60,80,30],value:"[K]",color:"#CDE"},
 
     ]
 };
+var energyAdd = {
+  id: "energyAdd",
+  position: [5,45,8,14],
+  clickable: true,
+  shortcut: "X",
+  visible: true,
+  components: [
+    { type: "box",position:[0,0,100,100],stroke:"#22FB00",width:4},
+    { type: "text",position:[10,5,75,30],value:"💎 5",color:"#CDE"},
+    { type: "text",position:[10,35,80,30],value:"REGEN",color:"#CDE"},
+    { type: "text",position:[10,60,80,30],value:"[X]",color:"#CDE"},
 
+    ]
+};
+/*Everyone's buttons: everyone have acess to this (these) button(s):
+  - Emergency Meeting cooldown. Only two per persons. */
+var emergency_meeting_button = {
+  id: "emergency_meeting_button",
+  position: [5,70,8,14],
+  clickable: true,
+  shortcut: "E",
+  visible: true,
+  components: [
+    { type: "box",position:[0,0,100,100],stroke:"#22FB00",width:4},
+    { type: "text",position:[10,5,75,30],value:"EMERGENCY",color:"#CDE"},
+    { type: "text",position:[10,35,80,30],value:"MEETING",color:"#CDE"},
+
+    ]
+};
 var tasks = {
   id: "tasks",
   position: [5,30,8,14],
@@ -179,21 +226,19 @@ var tasks = {
 
     ]
 };
-
 var taskOne = {
-  id: "taskOne",
-  position: [5,45,8,14],
-  clickable: true,
-  shortcut: "T",
-  visible: true,
-  components: [
-    { type: "box",position:[0,0,100,100],stroke:"#FBB300",width:4},
-    { type: "text",position:[10,5,75,30],value:"TASK 1",color:"#CDE"},
-    { type: "text",position:[10,35,80,30],value:"150 GEMS",color:"#CDE"},
-    { type: "text",position:[10,60,80,30],value:"[T]",color:"#CDE"},
-    ]
-};
-
+          id: "taskOne",
+          position: [5,45,8,14],
+          clickable: true,
+          shortcut: "T",
+          visible: true,
+          components: [
+            { type: "box",position:[0,0,100,100],stroke:"#FBB300",width:4},
+            { type: "text",position:[10,5,75,30],value:"TASK 1",color:"#CDE"},
+            { type: "text",position:[10,35,80,30],value:"150 GEMS",color:"#CDE"},
+            { type: "text",position:[10,60,80,30],value:"[T]",color:"#CDE"},
+            ]
+        };
 var taskTwo = {
   id: "taskTwo",
   position: [5,45,8,14],
@@ -207,7 +252,6 @@ var taskTwo = {
     { type: "text",position:[10,60,80,30],value:"[T]",color:"#CDE"},
     ]
 };
-
 var taskThree = {
   id: "taskThree",
   position: [5,45,8,14],
@@ -221,6 +265,25 @@ var taskThree = {
     { type: "text",position:[10,60,80,30],value:"[T]",color:"#CDE"},
     ]
 };
+
+
+
+var report_button = {
+  id: "report_button",
+  position: [80,39,8,14],
+  clickable: true,
+  shortcut: "R",
+  visible: true,
+  components: [
+    { type: "box",position:[0,0,100,100],stroke:"#CDC7B9",width:120},
+    { type: "text",position:[10,5,75,27],value:"REPORT",color:"#080807"},
+    { type: "text",position:[10,25,75,27],value:"BODY",color:"#080807"},
+    { type: "text",position:[10,50,80,30],value:"[R]",color:"#080807"},
+    ]
+};
+
+
+
 //Buttons informations
 var toTick = function(min) {
   return min*3600;
@@ -229,91 +292,160 @@ var rand = function(num) {
   return Math.floor(Math.random()*num);
 };
 var buttons_delay = toTick(3600);
-var kill_delay = toTick(3600);
-var weapons_code = 11;
-var costs = 150;
 var numberOfImpostors = 0;
 var IMPOSTOR = 0, CREWMATE = 1;
-var teams = {
-  names: ["red","green","blue"],
-  hues: [0,120,180]
-};
-var NumberOfTasks = 0;
-var FinishedTasks = 0;
+var ImpostorChances = ["yes", "no"];
 var putInImpostorTeam = function(ship) {
   ship.set({team: IMPOSTOR });
 };
 var putInCrewTeam = function(ship) {
   ship.set({team: CREWMATE });
 };
-var putInCrewTeam = function(ship) {
-  ship.set({team: CREWMATE });
-};
 var ship_spawn = function(ship) {
-  ship.set({x:0,y: 0});
+  ship.set({x:0,y: 0, crystals: 20, stats: 11111111});
+
 };
-
-var ship_game_over = function(ship) {
-  ship.gameover({"Rating":"Can do better","Score":1234});
-}
-;
-
-this.tick = function(game) {
-  if (game.step % 15 == 0) {
-    for (let ship of game.ships) {
-      if (!ship.custom.init) {
-        ship.custom.init = true;
-        if (rand(2) && numberOfImpostors < 2) {
-          teams.names.forEach((n,i) => {
-            ship.setUIComponent({
-              id: n,
-              position: [5,45+i*15,8,14],
-              clickable: true,
-              shortcut: n[0].toUpperCase(),
-              visible: true,
-              components: [
-                { type: "box",position:[0,0,100,100],stroke:`hsla(${teams.hues[i]},100%,50%,1)`,width:4},
-                { type: "text",position:[10,5,75,30],value:"💎 150",color:"#CDE"},
-                { type: "text",position:[10,35,80,30],value:n.toUpperCase(),color:"#CDE"},
-                { type: "text",position:[10,60,80,30],value:`[${n[0].toUpperCase()}]`,color:"#CDE"},
-              ]
-            });
-          });
-          ship.setUIComponent(kill);
-          putInImpostorTeam(ship);
-          numberOfImpostors++;
-          ship_spawn(ship);
-        }
-        else {
-          putInCrewTeam(ship);
-          ship.setUIComponent(tasks);
-          ship_spawn(ship);
-        }
-      }
-    }
-  }
+var ship_impasta_join = function(ship) {
+    ship.set({type: 102});
 };
-
-
-var team_button_clicked = function(ship, index) {
-  if ((!ship.custom.next_change || (game.step >= ship.custom.next_change)) && ship.crystals >= costs) {
-    ship.custom.next_change = game.step + buttons_delay;
-    ship.set({hue: teams.hues[index], crystals: ship.crystals - costs });
-  }
+var ship_not_impasta_join = function(ship) {
+    ship.set({type: 103});
 };
-
-var kill_button_clicked = function(ship) {
-  if (!ship.custom.next_change || game.step >= ship.custom.next_change) {
-    ship.custom.next_change = game.step + kill_delay;
-    game.addCollectible({code: 11, x: ship.x, y: ship.y});
-  }
+var shipGotDestroyed = function(ship) {
+  ship.set({type: 104});
 };
-
+var shipTPToTheCenter = function(ship) {
+  ship.set({x: 0, y:0});
+};
+var alienTask = function(ship) {
+  alien.set({shield: 1, rate: 0.1});
+};
 var resetShip = function(ship) {
   ship.set({type:101});
 };
 var taskOneAchieved = function(ship) {
-  ship.set({crystals: ship.crystals - 150});
+  ship.set({crystals: ship.crystals - 10});
+};
+var ventShip = function(ship) {
+  if (ship.x == 0 && ship.y == 0) {
+    ship.set({x: 5, y: 5});
+  }
+};
+var giveMoreEnergy = function(ship) {
+  ship.set({generator: ship.generator + 10, crystals: ship.crystals - 5});
+};
+var appearEmergencyMeetingButton = function(ship) {
+    if (ship.x >= -50 && ship.x <= -40 && ship.y >= 20 && ship.y <= 30) {
+        ship.setUIComponent(emergency_meeting_button);
+    } else {
+      ship.setUIComponent({id:"emergency_meeting_button",visible:false});
+    }
+};
+var scoreSet = function(ship) {
+  ship.set({score: 0});
+};
+
+var killedCrewmate = {
+  id: "killedCrewmate",
+  obj: "https://raw.githubusercontent.com/W0lfan/Revoltar-Ultrazion-Mod/main/dead_crewmate",
+  diffuse: "https://raw.githubusercontent.com/mrGoldman1122/starblastGa/master/ship_lambert_texture.png",
+  emissive: "https://raw.githubusercontent.com/StarblastFinalizer/StarblastModding/master/ship_emissive_texture.png",
+  bump: "https://raw.githubusercontent.com/mrGoldman1122/starblastGa/master/ship_lambert_texture.png",
+} ;
+
+var time = 60;
+var blockedShipBecauseYouHaveToWait = function(ship) {
+  ship.set({invulnerable:100, x:0, y:0, vx: 0, vy: 0, idle: true});
+};
+
+var notBlockedAnymoreBecauseYouDontHaveToWaitAnymore = function(ship) {
+  ship.set({invulnerable:0, idle: false});
+};
+
+var lessEnergyForImpasta = function(ship) {
+  ship.set({generator: ship.generator - 70});
+};
+this.tick = function(game) { //1
+  if (game.step % 15 == 0) {//2
+    for (let ship of game.ships) {//3
+      appearEmergencyMeetingButton(ship);
+      scoreSet(ship);
+//          if (FinishedTasks === 0) {//4
+//            var Icons = {//5
+//              id: "radar_background",
+//              components: [
+//                { type: "text",position:[60,44,6,6],value: "💎", color:"#CDE"},
+//                { type: "text",position:[43,45,6,6],value: "📣", color:"#CDE"},
+//                { type: "text",position:[35,23,6,6],value: "💨", color:"#CDE"},
+//                ]
+//              };//5
+//            ship.setUIComponent(Icons);
+//            }//4
+        if (!ship.custom.init) {//6
+          ship.custom.init = true;
+          if (ImpostorChances[~~(Math.random()*ImpostorChances.length)] == "yes" && numberOfImpostors <= 1) {//7
+            putInImpostorTeam(ship);
+            numberOfImpostors++;
+            ship_impasta_join(ship);
+          }//7
+          else {//8
+            putInCrewTeam(ship);
+            ship_not_impasta_join(ship);          
+          }//8
+        }//6
+        if (ship.alive !== true) {//9
+           shipGotDestroyed(ship);
+           shipDiedX = ship.x;
+           shipDiedY = ship.y;
+           game.setObject({id: "killedCrewmate",type: killedCrewmate,position: {x:objectx = shipDiedX,y: objecty = shipDiedY,z:-10},rotation: {x:-0.5,y:0,z:2},scale: {x:2,y:2,z:2}}) ;
+           shipTPToTheCenter(ship);
+        }//9
+      }//3
+    }//2
+    //if (game.step % 3600/2 == 0 ) {//10
+    //      ship.setUIComponent({id: "infos", visible: false});
+    //}//10
+    if (game.step % 60 == 0) {
+      for (let ship of game.ships) {
+          if (time !== -1) {
+            var timer = {
+              id: "timer",
+              position: [40,39,70,50],
+              visible: true,
+              components: [
+                { type: "text",position:[5,75,80,30],value: time,color:"#1CECEC"},
+                ]
+            };
+            time--;
+            ship.setUIComponent(timer);
+            ship.setUIComponent(waiting);
+            ship.setUIComponent(credits);
+            blockedShipBecauseYouHaveToWait(ship);
+            ship_spawn(ship);
+          } else {
+            ship.setUIComponent(infos);
+            notBlockedAnymoreBecauseYouDontHaveToWaitAnymore(ship);
+            ship.setUIComponent({id: "infos", visible: false})
+            ship.setUIComponent({id: "waiting", visible: false})
+            ship.setUIComponent({id: "credits", visible: false})
+            ship.setUIComponent({id: "timer", visible: false})
+
+            if (ship.team = CREWMATE) {
+              ship.setUIComponent(tasks);
+            } else {
+              ship.setUIComponent(energyAdd);
+              ship.setUIComponent(vent);
+              lessEnergyForImpasta(ship);
+          }
+        }
+      }
+    }
+};//1
+var buttonClickedTasks = 0;
+var emergency_ship = 1;
+var NumberOfTasks = 0;
+var moins10gems = function(ship) {
+  ship.set({crystals: ship.crystals - 10});
 };
 
 this.event = function(event, game) {
@@ -321,30 +453,67 @@ this.event = function(event, game) {
   switch (event.name) {
     case "ui_component_clicked":
       switch (event.id) {
-        case "reset":
-          resetShip(ship);
-          break;
-        case "kill":
-          kill_button_clicked(ship);
+        case "vent":
+          ventShip(ship);
           break;
         case "tasks":
-            if (NumberOfTasks <= 0) {
+            if (NumberOfTasks = 0) {
               ship.setUIComponent(taskOne);
-            } else if (NumberOfTasks <= 1) {
+              NumberOfTasks++;
+            } 
+            else if (FinishedTasks = 1) {
               ship.setUIComponent(taskTwo);
               NumberOfTasks++;
+            } 
+            else if (finishedTasks = 2) {
+              ship_spawn(ship);
             }
           break;
         case "taskOne":
-          if (ship.crystals >= 150) {
+          if (ship.crystals >= 10) {
             taskOneAchieved(ship);
             ship.setUIComponent({id:"taskOne",visible:false});
             FinishedTasks++;
           }
           break;
+        case "emergency_meeting_button":
+          if (emergency_ship > 0 && ship.crystals >= 10) {
+            game.ships[0].set({x:-43 + 5,y:27 });
+            game.ships[1].set({x:-43,y:27 + 5});
+            game.ships[2].set({x:-43 - 5,y:27});
+            game.ships[3].set({x:-43,y:27 - 5});
+            game.ships[4].set({x:-43 + 5,y:27 + 5});
+            game.ships[5].set({x:-43 - 5,y:27 - 5});
+            game.ships[6].set({x:-43 + 2,y:27});
+            game.ships[7].set({x:-43,y:27 + 2});
+            game.ships[8].set({x:-43+ 2,y:27 - 2});
+            game.ships[9].set({x:-43 + 2,y:27 + 2});
+            moins10gems(ship);
+            emergency_ship--;
+          }
+        case "energyAdd":
+          if (ship.crystals >= 5) {
+            giveMoreEnergy(ship);
+          }
         default:
           let id = teams.names.indexOf(event.id);
           if (id != -1) team_button_clicked(ship, id);
+      break;
       }
   }
 };
+var cube = {
+  id: "cube",
+  obj: "https://raw.githubusercontent.com/W0lfan/Among-Stars/main/emergency_button_OBJ",
+  diffuse: "https://raw.githubusercontent.com/mrGoldman1122/starblastGa/master/ship_lambert_texture.png",
+  emissive: "https://raw.githubusercontent.com/StarblastFinalizer/StarblastModding/master/ship_emissive_texture.png",
+  bump: "https://raw.githubusercontent.com/mrGoldman1122/starblastGa/master/ship_lambert_texture.png",
+  
+} ;
+game.setObject({
+  id: "cube",
+  type: cube,
+  position: {x:-43,y:27,z:-20},
+  rotation: {x:0,y:0,z:0},
+  scale: {x:20,y:20,z:20}
+}) ;
