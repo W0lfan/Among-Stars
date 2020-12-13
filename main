@@ -137,7 +137,7 @@ this.options = {
   custom_map: Kerakna ,//Random maps is a cool idea I think.
   radar_zoom: 1.1,//Can you see ONLY the ship?
 };
-//Waiting screen component
+//Waiting screen components
 var infos = {
   id: "infos",
   position: [30,10,70,30],
@@ -158,15 +158,6 @@ var waiting = {
 };
 var credits = {
   id: "credits",
-  position: [5,80,70,30],
-  visible: true,
-  components: [
-    { type: "text",position:[0,-5,50,50],value:"This mod was made by Wolfan." ,color:"#CDE"},
-    { type: "text",position:[1,0,70,70],value:"You can contact him to report bugs or submit suggestions on discord." ,color:"#CDE"},
-    ]
-};
-var crewmateorimpostor = {
-  id: "role",
   position: [5,80,70,30],
   visible: true,
   components: [
@@ -220,6 +211,22 @@ var emergency_meeting_button = {
 
     ]
 };
+var report_button = {
+  id: "report_button",
+  position: [80,39,8,14],
+  clickable: true,
+  shortcut: "R",
+  visible: true,
+  components: [
+    { type: "box",position:[0,0,100,100],stroke:"#CDC7B9",width:120},
+    { type: "text",position:[10,5,75,27],value:"REPORT",color:"#080807"},
+    { type: "text",position:[10,25,75,27],value:"BODY",color:"#080807"},
+    { type: "text",position:[10,50,80,30],value:"[R]",color:"#080807"},
+    ]
+};
+/*Crewamte's buttons: only the crewmates have acces to these buttons:
+- Tasks buttons
+*/
 var tasks = {
   id: "tasks",
   position: [5,30,8,14],
@@ -231,22 +238,21 @@ var tasks = {
     { type: "text",position:[10,5,75,30],value:"200",color:"#CDE"},
     { type: "text",position:[10,35,80,30],value:"TASKS",color:"#CDE"},
     { type: "text",position:[10,60,80,30],value:"[K]",color:"#CDE"},
-
     ]
 };
 var taskOne = {
-          id: "taskOne",
-          position: [5,45,8,14],
-          clickable: true,
-          shortcut: "T",
-          visible: true,
-          components: [
-            { type: "box",position:[0,0,100,100],stroke:"#FBB300",width:4},
-            { type: "text",position:[10,5,75,30],value:"TASK 1",color:"#CDE"},
-            { type: "text",position:[10,35,80,30],value:"150 GEMS",color:"#CDE"},
-            { type: "text",position:[10,60,80,30],value:"[T]",color:"#CDE"},
-            ]
-        };
+  id: "taskOne",
+  position: [5,45,8,14],
+  clickable: true,
+  shortcut: "T",
+  visible: true,
+  components: [
+    { type: "box",position:[0,0,100,100],stroke:"#FBB300",width:4},
+    { type: "text",position:[10,5,75,30],value:"TASK 1",color:"#CDE"},
+    { type: "text",position:[10,35,80,30],value:"150 GEMS",color:"#CDE"},
+    { type: "text",position:[10,60,80,30],value:"[T]",color:"#CDE"},
+    ]
+};
 var taskTwo = {
   id: "taskTwo",
   position: [5,45,8,14],
@@ -276,30 +282,7 @@ var taskThree = {
 
 
 
-var report_button = {
-  id: "report_button",
-  position: [80,39,8,14],
-  clickable: true,
-  shortcut: "R",
-  visible: true,
-  components: [
-    { type: "box",position:[0,0,100,100],stroke:"#CDC7B9",width:120},
-    { type: "text",position:[10,5,75,27],value:"REPORT",color:"#080807"},
-    { type: "text",position:[10,25,75,27],value:"BODY",color:"#080807"},
-    { type: "text",position:[10,50,80,30],value:"[R]",color:"#080807"},
-    ]
-};
-
-
-
-//Buttons informations
-var toTick = function(min) {
-  return min*3600;
-};
-var rand = function(num) {
-  return Math.floor(Math.random()*num);
-};
-var buttons_delay = toTick(3600);
+//Variables
 var numberOfImpostors = 0;
 var IMPOSTOR = 0, CREWMATE = 1;
 var ImpostorChances = ["yes", "no"];
@@ -312,7 +295,7 @@ var putInCrewTeam = function(ship) {
 var ship_spawn = function(ship) {
   ship.set({x:0,y: 0, crystals: 20, stats: 11111111});
 
-};
+}; //When the ship will spawn for the first time
 var ship_impasta_join = function(ship) {
     ship.set({type: 102});
 };
@@ -321,16 +304,10 @@ var ship_not_impasta_join = function(ship) {
 };
 var shipGotDestroyed = function(ship) {
   ship.set({type: 104});
-};
+}; //Assign spectator ship
 var shipTPToTheCenter = function(ship) {
   ship.set({x: 0, y:0});
-};
-var alienTask = function(ship) {
-  alien.set({shield: 1, rate: 0.1});
-};
-var resetShip = function(ship) {
-  ship.set({type:101});
-};
+}; //???
 var taskOneAchieved = function(ship) {
   ship.set({crystals: ship.crystals - 10});
 };
@@ -341,77 +318,76 @@ var ventShip = function(ship) {
 };
 var giveMoreEnergy = function(ship) {
   ship.set({generator: ship.generator + 10, crystals: ship.crystals - 5});
-};
+}; //Bonus for the impostor
 var appearEmergencyMeetingButton = function(ship) {
     if (ship.x >= -50 && ship.x <= -40 && ship.y >= 20 && ship.y <= 30) {
         ship.setUIComponent(emergency_meeting_button);
     } else {
       ship.setUIComponent({id:"emergency_meeting_button",visible:false});
     }
-};
+}; //Emergency meeting!
 var scoreSet = function(ship) {
   ship.set({score: 0});
-};
-
+}; //Keep the score to 0, please.
 var killedCrewmate = {
   id: "killedCrewmate",
   obj: "https://raw.githubusercontent.com/W0lfan/Revoltar-Ultrazion-Mod/main/dead_crewmate",
   diffuse: "https://raw.githubusercontent.com/mrGoldman1122/starblastGa/master/ship_lambert_texture.png",
   emissive: "https://raw.githubusercontent.com/StarblastFinalizer/StarblastModding/master/ship_emissive_texture.png",
   bump: "https://raw.githubusercontent.com/mrGoldman1122/starblastGa/master/ship_lambert_texture.png",
-} ;
-
-var time = 60;
+} ; //Shadow X-2 object, killed crewmate be like.
+var time = 60; //Time of the timer.
 var blockedShipBecauseYouHaveToWait = function(ship) {
   ship.set({invulnerable:100, x:0, y:0, vx: 0, vy: 0, idle: true});
-};
-
+}; //Ship waiting.
 var notBlockedAnymoreBecauseYouDontHaveToWaitAnymore = function(ship) {
   ship.set({invulnerable:0, idle: false});
-};
-
+}; //Ship stop waiting.
 var lessEnergyForImpasta = function(ship) {
   ship.set({generator: ship.generator - 70});
-};
-this.tick = function(game) { //1
-  if (game.step % 15 == 0) {//2
-    for (let ship of game.ships) {//3
-      appearEmergencyMeetingButton(ship);
-      scoreSet(ship);
-//          if (FinishedTasks === 0) {//4
-//            var Icons = {//5
+}; //???
+this.tick = function(game) {
+  if (game.step % 15 == 0) {
+    for (let ship of game.ships) {
+      appearEmergencyMeetingButton(ship); //Emergency button appears if...
+      scoreSet(ship); //Set the score to 0.
+
+//          if (FinishedTasks === 0) {
+//            var Icons = {
 //              id: "radar_background",
 //              components: [
 //                { type: "text",position:[60,44,6,6],value: "💎", color:"#CDE"},
 //                { type: "text",position:[43,45,6,6],value: "📣", color:"#CDE"},
 //                { type: "text",position:[35,23,6,6],value: "💨", color:"#CDE"},
 //                ]
-//              };//5
+//              };
 //            ship.setUIComponent(Icons);
-//            }//4
+//            }
         if (!ship.custom.init) {//6
-          ship.custom.init = true;
-          if (ImpostorChances[~~(Math.random()*ImpostorChances.length)] == "yes" && numberOfImpostors <= 1) {//7
-            putInImpostorTeam(ship);
-            numberOfImpostors++;
-            ship_impasta_join(ship);
-            
-          }//7
-          else {//8
-            putInCrewTeam(ship);
-            ship_not_impasta_join(ship);          
-          }//8
-        }//6
-        if (ship.alive !== true) {//9
-           shipGotDestroyed(ship);
-           game.setObject({id: "killedCrewmate",type: killedCrewmate,position: {x: ship.x,y: ship.y,z:-10},rotation: {x:-0.5,y:0,z:2},scale: {x:2,y:2,z:2}}) ;
-           shipTPToTheCenter(ship);
-        }//9
-      }//3
-    }//2
-    //if (game.step % 3600/2 == 0 ) {//10
-    //      ship.setUIComponent({id: "infos", visible: false});
-    //}//10
+          ship.custom.init = true; //When the ship spawns.
+          if (ImpostorChances[~~(Math.random()*ImpostorChances.length)] == "yes" && numberOfImpostors <= 1) {//1/2 chance to be impostor.
+            putInImpostorTeam(ship);// Put in impostor's team.
+            numberOfImpostors++;// +1 tomake tht only one impostor can join impostor's again.
+            ship_impasta_join(ship); //Impostor's ship.
+            role = "Impostor, be careful and kill everyone."; //Bruh
+          }
+          else {
+            putInCrewTeam(ship); // Put in crewmat's team.
+            ship_not_impasta_join(ship);// Gives non-impostor ship.
+            role = "Do your tasks and find the impostor.";//Bruh
+          }
+          
+        }
+        if (ship.alive !== true) {// If the ship dies.
+           shipGotDestroyed(ship);// Gives spectator's ship.
+           game.setObject({id: "killedCrewmate",type: killedCrewmate,position: {x: ship.x,y: ship.y,z:-10},rotation: {x:-0.5,y:0,z:2},scale: {x:2,y:2,z:2}}) ;// Set the object of the dead shadow X-2 at the place where the ship died.
+           shipTPToTheCenter(ship);// Need a fix.
+        }
+      }
+    }
+    if (game.step % 3600/2 == 0 ) {
+          ship.setUIComponent({id: "infos", visible: false}); //Hide the informations at the start of the game.
+    }
     if (game.step % 60 == 0) {
       for (let ship of game.ships) {
           if (time !== -1) {
@@ -422,27 +398,28 @@ this.tick = function(game) { //1
               components: [
                 { type: "text",position:[5,75,80,30],value: time,color:"#1CECEC"},
                 ]
-            };
+            }; //Timer stuff
             time--;
-            ship.setUIComponent(timer);
-            ship.setUIComponent(waiting);
-            ship.setUIComponent(credits);
-            blockedShipBecauseYouHaveToWait(ship);
-            ship_spawn(ship);
+            ship.setUIComponent(timer); // Set the timer.
+            ship.setUIComponent(waiting); //Set the waiting sentence.
+            ship.setUIComponent(credits); //Set the credits sentence.
+            blockedShipBecauseYouHaveToWait(ship); //You can't move, sad.
+            ship_spawn(ship); //Teleport to 0 0.
+
           } else {
-            ship.setUIComponent(infos);
-            notBlockedAnymoreBecauseYouDontHaveToWaitAnymore(ship);
-            ship.setUIComponent({id: "infos", visible: false})
-            ship.setUIComponent({id: "waiting", visible: false})
-            ship.setUIComponent({id: "credits", visible: false})
-            ship.setUIComponent({id: "timer", visible: false})
+            ship.setUIComponent(infos); //Show infos's componenet.
+            notBlockedAnymoreBecauseYouDontHaveToWaitAnymore(ship); //You can now move, cool.
+            ship.setUIComponent({id: "waiting", visible: false}) //Hide the waiting component.
+            ship.setUIComponent({id: "credits", visible: false}) //Show the credits componenet.
+            ship.setUIComponent({id: "timer", visible: false}) //Show the timer.
 
             if (ship.team = CREWMATE) {
-              ship.setUIComponent(tasks);
+              ship.setUIComponent(tasks); //Show the task button.
+              
             } else {
-              ship.setUIComponent(energyAdd);
-              ship.setUIComponent(vent);
-              lessEnergyForImpasta(ship);
+              ship.setUIComponent(energyAdd); //Show the EnergyAdd button.
+              ship.setUIComponent(vent); //Show the vent button.
+              lessEnergyForImpasta(ship); //Put impostor's generator to 60 (to fix).
           }
         }
       }
