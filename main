@@ -128,26 +128,6 @@ var shipsOfTheGame = [
 
 
 
-var vocabulary = [
-      { text: "You", icon:"\u004e", key:"O" },
-      { text: "Me", icon:"\u004f", key:"E" },
-      { text: "Yes", icon:"\u004c", key:"Y" },
-      { text: "No", icon:"\u004d", key:"N" },
-
-      { text: "Sus", icon:"\u004a", key:"S" },
-      { text: "Defend", icon:"\u0025", key:"D" },
-      { text: "Have", icon:"", key:"D" },
-      { text: "Good Game", icon:"GG", key:"G" },
-
-      { text: "Wait", icon:"\u0048", key:"T" },
-      { text: "Kill", icon:"\u005b", key:"B" },
-      { text: "Missile", icon:"\u006b", key:"M" },
-      { text: "Hmm", icon:"\u004b", key:"Q" },
-
-      { text: "Changed", icon:"", key:"X" },
-      { text: "His color", icon:"\u00b0", key:"Z" }
-    ] ;
-    
     
 this.options = {
   root_mode: "",//Bouncing lasers going brr
@@ -157,7 +137,6 @@ this.options = {
   soundtrack: "argon.mp3", //A music, for the game I guess? Maybe trying to make a thing that play Among Us music.
   map_size: 90, //Map size is 90..so why not?
   reset_tree: false, //Actually if it was "true" there will be no differences.
-  vocabulary: vocabulary, //A vocabulary because there is not chat I guess.
   friendly_colors: 3, //3 ? Just why?
   lives: 0, //Trying to make a system that made you a gameover screen when you die.
   ships: shipsOfTheGame, //Uuuuh..nothing to say about that.
@@ -309,13 +288,19 @@ var hideMiningBar = {
   position: [1,18.5,40,3],
   visible: true,
   components: [
-    { type: "box",position:[9.5,18.5,27.5,3],stroke:"#606666",width:100},
+    { type: "box",position:[9.5,18.5,27.5,3],stroke:"#606666",width:105},
     { type: "text",position:[-26,5,100,100],value:"⚠ ️MINING IS USELESS",color:"#CDE"},
 
     ]
 };
-
-
+var infos_2 = {
+  id: "infos_2",
+  position: [5,80,70,30],
+  visible: true,
+  components: [
+    { type: "text",position:[25,-5,70,70],value:"You died. You are now in spectator mode." ,color:"#CDE"},
+    ]
+};
 //Variables
 var numberOfImpostors = 0;
 var IMPOSTOR = 0, CREWMATE = 1;
@@ -343,11 +328,9 @@ var ship_impasta_join = function(ship) {
 var ship_not_impasta_join = function(ship) {
     ship.set({type: ShipsNotImpastaNumber[~~(Math.random()*ShipsNotImpastaNumber.length)]});
 };
-var shipGotDestroyed = function(ship) {
-  ship.set({type: 109});
-}; //Assign spectator ship
+
 var shipTPToTheCenter = function(ship) {
-  ship.set({x: 0, y:0});
+  ship.set({x:0, y:0});
 }; //???
 var taskOneAchieved = function(ship) {
   ship.set({crystals: ship.crystals - 10});
@@ -357,9 +340,7 @@ var ventShip = function(ship) {
     ship.set({x: 5, y: 5});
   }
 };
-var giveMoreEnergy = function(ship) {
-  ship.set({generator: ship.generator + 10, crystals: ship.crystals - 5});
-}; //Bonus for the impostor
+
 var appearEmergencyMeetingButton = function(ship) {
     if (ship.x >= -50 && ship.x <= -40 && ship.y >= 20 && ship.y <= 30) {
         ship.setUIComponent(emergency_meeting_button);
@@ -377,7 +358,7 @@ var killedCrewmate = {
   emissive: "https://raw.githubusercontent.com/StarblastFinalizer/StarblastModding/master/ship_emissive_texture.png",
   bump: "https://raw.githubusercontent.com/mrGoldman1122/starblastGa/master/ship_lambert_texture.png",
 } ; //Shadow X-2 object, killed crewmate be like.
-var time = 0; //Time of the timer.
+var time = 5; //Time of the timer.
 var blockedShipBecauseYouHaveToWait = function(ship) {
   ship.set({invulnerable:100, x:0, y:0, vx: 0, vy: 0, idle: true});
 }; //Ship waiting.
@@ -415,10 +396,6 @@ this.tick = function(game) {
     }
     if (game.step % 60 == 0) {
       for (let ship of game.ships) {
-        if (ship.alive !== true) {// If the ship dies.
-           shipGotDestroyed(ship);// Gives spectator's ship.
-           middle(ship);
-          }
           if (time !== -1) {
             var timer = {
               id: "timer",
@@ -462,6 +439,16 @@ var showEmergencyButton = function(ship) {
   ship.setUIComponent(meeting);
   ship.set({crystals: ship.crystals - 20});
 }
+
+
+
+var shipGotDestroyed = function(ship) {
+  ship.set({type: 109});
+  ship.setUIComponent(infos_2);
+}; //Assign spectator ship
+
+
+
 
 this.event = function(event, game) {
   let ship = event.ship;
@@ -508,8 +495,22 @@ this.event = function(event, game) {
           }
           break;
       }
+      break;
+  case "ship_destroyed":
+    if (ship !== null) {
+      shipGotDestroyed(ship);
+      game.setObject({
+        id: "killeCrewmte",
+        type: killedCrewmate,
+        position: {x:ship.x,y:ship.y,z:-10},
+        rotation: {x:0,y:0,z:0},
+        scale: {x:2,y:2,z:2}
+      }) ;
+    }
   }
 };
+
+
 var cube = {
   id: "cube",
   obj: "https://raw.githubusercontent.com/W0lfan/Among-Stars/main/emergency_button_OBJ",
