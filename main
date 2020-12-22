@@ -1,3 +1,4 @@
+
 var Kerakna =
 "                   333                                              333                   \n"+
 "                   333   333                                  333   333                   \n"+
@@ -242,45 +243,6 @@ var tasks = {
     { type: "text",position:[10,60,80,30],value:"[K]",color:"#CDE"},
     ]
 };
-var taskOne = {
-  id: "taskOne",
-  position: [5,45,8,14],
-  clickable: true,
-  shortcut: "T",
-  visible: true,
-  components: [
-    { type: "box",position:[0,0,100,100],stroke:"#FBB300",width:4},
-    { type: "text",position:[10,5,75,30],value:"TASK 1",color:"#CDE"},
-    { type: "text",position:[10,35,80,30],value:"150 GEMS",color:"#CDE"},
-    { type: "text",position:[10,60,80,30],value:"[T]",color:"#CDE"},
-    ]
-};
-var taskTwo = {
-  id: "taskTwo",
-  position: [5,45,8,14],
-  clickable: true,
-  shortcut: "T",
-  visible: true,
-  components: [
-    { type: "box",position:[0,0,100,100],stroke:"#FBB300",width:4},
-    { type: "text",position:[10,5,75,30],value:"TASK 2",color:"#CDE"},
-    { type: "text",position:[10,35,80,30],value:"",color:"#CDE"},
-    { type: "text",position:[10,60,80,30],value:"[T]",color:"#CDE"},
-    ]
-};
-var taskThree = {
-  id: "taskThree",
-  position: [5,45,8,14],
-  clickable: true,
-  shortcut: "T",
-  visible: true,
-  components: [
-    { type: "box",position:[0,0,100,100],stroke:"#22FB00",width:4},
-    { type: "text",position:[10,5,75,30],value:"TASK 3",color:"#CDE"},
-    { type: "text",position:[10,35,80,30],value:"",color:"#CDE"},
-    { type: "text",position:[10,60,80,30],value:"[T]",color:"#CDE"},
-    ]
-};
 
 
 var hideMiningBar = {
@@ -359,6 +321,7 @@ var killedCrewmate = {
   bump: "https://raw.githubusercontent.com/mrGoldman1122/starblastGa/master/ship_lambert_texture.png",
 } ; //Shadow X-2 object, killed crewmate be like.
 var time = 5; //Time of the timer.
+var time2 = 70;
 var blockedShipBecauseYouHaveToWait = function(ship) {
   ship.set({invulnerable:100, x:0, y:0, vx: 0, vy: 0, idle: true});
 }; //Ship waiting.
@@ -367,7 +330,7 @@ var notBlockedAnymoreBecauseYouDontHaveToWaitAnymore = function(ship) {
 }; //Ship stop waiting.
 
 var tpTheShip = 0;
-
+var emergency = 0;
 this.tick = function(game) {
   if (game.step % 15 == 0) {
     for (let ship of game.ships) {
@@ -422,19 +385,32 @@ this.tick = function(game) {
               ship.setUIComponent(vent); //Show the vent button.
           }
         }
+        /*if (time2 == -1) {
+          emergency--;
+        }
+        if (emergency == 1 && time2 !== -1) {
+            ship.setUIComponent(timer2);
+            blockedShipBecauseYouHaveToWait(ship);
+            var timer2 = {
+              id: "timer2",
+              position: [40,39,70,50],
+              visible: true,
+              components: [
+                { type: "text",position:[5,75,80,30],value: time2,color:"#1CECEC"},
+                ]
+            }; //Timer stuff
+            time2--;
+          } else {
+            notBlockedAnymoreBecauseYouDontHaveToWaitAnymore(ship);
+            ship.setUIComponent({id: "timer2", visible: false});
+          }*/
       }
-    }
-    if (game.step % 60*5 == 0 ) {
-      for (let ship of game.ships) {
-        ship.setUIComponent({id: "meeting", visible: "false"});
-        } 
       }
 };//1
 
 
 var buttonClickedTasks = 0;
 var NumberOfTasks = 0;
-var emergency_for_ship = 0;
 var showEmergencyButton = function(ship) {
   ship.setUIComponent(meeting);
   ship.set({crystals: ship.crystals - 20});
@@ -447,7 +423,40 @@ var shipGotDestroyed = function(ship) {
   ship.setUIComponent(infos_2);
 }; //Assign spectator ship
 
-
+var showTasks = 0;
+var TaskFinished = "#22FB00";
+var TaskWillFinishSoon = "#FBB300";
+var TaskFinished = "#EE2C1B";
+var TaskOneDone = 0;
+var TaskTwoDone = 0;
+var TaskThreeDone = 0;
+let everythingIsFinished = 0;
+var taskTwo = {
+  id: "taskTwo",
+  position: [5,60,8,14],
+  clickable: true,
+  shortcut: "T",
+  visible: true,
+  components: [
+    { type: "box",position:[0,0,100,100],stroke:"#FBB300",width:4},
+    { type: "text",position:[10,5,75,30],value:"TASK 2",color:"#CDE"},
+    { type: "text",position:[10,35,80,30],value:"",color:"#CDE"},
+    { type: "text",position:[10,60,80,30],value:"[T]",color:"#CDE"},
+    ]
+};
+var taskThree = {
+  id: "taskThree",
+  position: [5,75,8,14],
+  clickable: true,
+  shortcut: "T",
+  visible: true,
+  components: [
+    { type: "box",position:[0,0,100,100],stroke:"#22FB00",width:4},
+    { type: "text",position:[10,5,75,30],value:"TASK 3",color:"#CDE"},
+    { type: "text",position:[10,35,80,30],value:"",color:"#CDE"},
+    { type: "text",position:[10,60,80,30],value:"[T]",color:"#CDE"},
+    ]
+};
 
 
 this.event = function(event, game) {
@@ -459,27 +468,20 @@ this.event = function(event, game) {
           ventShip(ship);
           break;
         case "tasks":
-            if (NumberOfTasks == 0) {
-              ship.setUIComponent(taskOne);
-              NumberOfTasks++;
-            } 
-            else if (FinishedTasks == 1) {
-              ship.setUIComponent(taskTwo);
-              NumberOfTasks++;
-            } 
-            else if (finishedTasks == 2) {
-              ship_spawn(ship);
-            }
-          break;
-        case "taskOne":
-          if (ship.crystals >= 10) {
-            taskOneAchieved(ship);
-            ship.setUIComponent({id:"taskOne",visible:false});
-            FinishedTasks++;
+          if (showTasks == 0) {
+            ship.setUIComponent(taskOne);
+            ship.setUIComponent(taskTwo);
+            ship.setUIComponent(taskThree);
+            showTasks++;
+          } else  {
+            ship.setUIComponent({id : "taskOne", visible : false});
+            ship.setUIComponent({id : "taskTwo", visible : false});
+            ship.setUIComponent({id : "taskThree", visible : false});
+            showTasks--;
           }
           break;
         case "emergency_meeting_button":
-          if (ship.crystals == 20 && emergency_for_ship <= 0) {
+          if (ship.crystals == 20) {
             game.ships[0].set({x:-43 + 5,y:27 });
             game.ships[1].set({x:-43,y:27 + 5});
             game.ships[2].set({x:-43 - 5,y:27});
@@ -491,7 +493,7 @@ this.event = function(event, game) {
             game.ships[8].set({x:-43+ 2,y:27 - 2});
             game.ships[9].set({x:-43 + 2,y:27 + 2});
             showEmergencyButton(ship);
-            emergency_for_ship++;
+            emergency++;
           }
           break;
       }
